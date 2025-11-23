@@ -8,7 +8,7 @@ set $menu $HOME/.config/rofi/launchers/type-2/launcher.sh
 set $browser google-chrome-stable --disable-features=WaylandWpColorManagerV1
 set $fileManager thunar
 set $noti swaync-client -t -sw
-set $clipman cliphist list | rofi -dmenu -config ~/.config/rofi/cliphist.rasi | cliphist decode | wl-copy
+set $clipman cliphist list | rofi -dmenu -config ~/.config/rofi/dmenu.rasi | cliphist decode | wl-copy
 set $screenshot grim -g "$(slurp)" - | swappy -f -
 set $sysmon kitty -e btop
 
