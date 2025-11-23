@@ -1,0 +1,78 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+	background-image: none;
+	transition: 20ms;
+	box-shadow: none;
+}
+
+window {
+	background-size: cover;
+	font-size: 16pt;
+	background-color: rgba(30, 30, 46, 0.90);
+  color: #cdd6f4;
+}
+
+button {
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 20%;
+	background-color: #181825;
+  animation: gradient_f 20s ease-in infinite;
+  border-radius: 100px; /* Increased border radius for a more rounded look */
+	border:0px;
+	transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  color: #cdd6f4;
+}
+
+button:focus{
+	background-size: 22%;
+	border: 0px;
+}
+
+button:hover {
+	background-color: rgb(48, 50, 66);
+  color: #cdd6f4;
+  background-size: 30%;
+  margin: 30px;
+  border-radius: 100px;
+}
+
+button span {
+	font-size: 2.2em;
+}
+
+#lock {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/lock.svg"));
+}
+
+#logout {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/logout.svg"));
+}
+
+#suspend {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/suspend.svg"));
+}
+
+#hibernate {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/hibernate.svg"));
+}
+
+#shutdown {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/shutdown.svg"));
+}
+
+#reboot {
+	margin: 10px;
+	border-radius: 20px;
+	background-image: image(url("icons/reboot.svg"));
+}

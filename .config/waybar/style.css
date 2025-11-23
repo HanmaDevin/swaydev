@@ -1,0 +1,144 @@
+@import "mocha.css"; 
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 7 Free", "Font Awesome 7 Brands";
+    font-size: 17px;
+    min-height: 0;
+    font-weight: bold;
+}
+
+#waybar {
+    background: transparent;
+    color: @text;
+    margin: 5px 5px;
+}
+
+/* #window { */
+/*     padding-left: 8; */
+/*     padding-right: 8; */
+/* } */
+
+#workspaces button {
+    color: @lavender;
+    border-radius: 1rem;
+    padding: 0.4rem;
+}
+
+
+#workspaces button:hover {
+    color: @sapphire;
+    border-radius: 1rem;
+}
+
+#workspaces {
+    background-color: @surface0;
+    border-radius: 1rem;
+    margin: 5px;
+}
+
+#workspaces button.active {
+    color: @sky;
+    border-radius: 1rem;
+}
+
+#custom-launcher,
+#custom-playerinfo,
+#mpris,
+#custom-weather,
+#custom-power,
+#custom-updates,
+#bluetooth,
+#custom-nordvpn,
+#custom-notification,
+#clock,
+#pulseaudio,
+#custom-vpn,
+#backlight,
+#network,
+#battery {
+    background-color: @surface0;
+    padding: 0.5rem 1rem;
+    margin: 5px 0;
+}
+
+#clock {
+  color: @sapphire;
+  border-radius: 0px 1rem 1rem 0px;
+}
+
+#battery {
+  color: @green;
+}
+#battery.charging {
+  color: @green;
+}
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#backlight, #battery {
+  border-radius: 0;
+}
+
+#pulseaudio {
+  color: @maroon;
+}
+
+#custom-playerinfo {
+    color: @mauve;
+    border-radius: 1rem;
+}
+
+#mpris {
+  color: @mauve;
+  border-radius: 1rem;
+}
+
+#custom-weather {
+    color: @peach;
+}
+
+#network {
+    color: @yellow;
+}
+
+#custom-notification {
+    color: @teal;
+}
+
+#custom-vpn {
+  color: @sky;
+}
+
+#custom-updates {
+    color: @lavender;
+    border-radius: 1rem 0px 0px 1rem;
+    margin-left: 1rem;
+}
+
+#bluetooth {
+    color: @blue;
+}
+
+tooltip {
+    background-color: @crust;
+    border-radius: 10px;
+}
+
+tooltip label {
+    color: @text;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left>widget:first-child>#workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right>widget:last-child>#workspaces {
+    margin-right: 0;
+}
